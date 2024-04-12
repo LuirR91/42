@@ -1,47 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/11 12:21:22 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/12 13:44:21 by luiribei         ###   ########.fr       */
+/*   Created: 2024/04/12 11:21:16 by luiribei          #+#    #+#             */
+/*   Updated: 2024/04/12 13:34:50 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int ft_atoi(const char *str)
+size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {
-	int	i;
-	int sign;
-	int result;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
-	sign = 1;
-	result = 0;
-
-	while ((str   [i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	j = 0;
+	while (src[j])
+		j++;
+	if (size < 1)
+		return (j);
+	while (src[i] && i < size - 1)
 	{
-		if (str[i] == '-')
-			sign = -1;
+		dest[i] = src[i];
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = (result * 10) + (str[i] - '0');
-		i++;
-	}
-	return (result * sign);
+	dest[i] = '\0';
+	return (j);
 }
 /*
-   int	main()
-   {
-   printf("%d\n", ft_atoi("  1340ab"));
-   return (0);
-   }
-   */
+int	main(void)
+{
+	char	s[] = "World!";
+	char	d[] = "Hello ";
+	printf("%d | %s\n", ft_strlcpy(d, s, 4), d);
+	return (0);
+}*/
