@@ -1,34 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/12 11:13:11 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/15 15:04:49 by luiribei         ###   ########.fr       */
+/*   Created: 2024/04/15 10:34:00 by luiribei          #+#    #+#             */
+/*   Updated: 2024/04/15 12:48:54 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strnstr(const char *str, const char *little, size_t len)
 {
-	size_t	d;
-	size_t	s;
-
-	d = ft_strlen(dst);
-	s = 0;
+	size_t	i;
 	
-	if (size == 0 || size <= ft_strlen(dst))
-		return (ft_strlen(src) + size);
-	while (src[s] && d < (size - 1))
+	i = 0;
+	if (*little == '\0')
+		return ((char *)str);
+	else
 	{
-		dst[d] = src[s];
-		d++;
-		s++;
+		while (i < len)
+		{
+			if (ft_strncmp((char *)&str[i], little, ft_strlen(little)) == 0)
+			{
+				if (i + ft_strlen(little) > len)
+					return (NULL);
+				return ((char *)str + i);
+			}
+			i++;
+		}
 	}
-	dst[d] = '\0';
-	return (ft_strlen(src) + ft_strlen(dst));
+	return (NULL);
 }
 
