@@ -92,4 +92,12 @@ int	main()
 }
 */
 
+/*					ft_bzero					*/
+/*
+int	main()
+{
+	ft_bzero();
+	return (0);
+}
+*/
 
