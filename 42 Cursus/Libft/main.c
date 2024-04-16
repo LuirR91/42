@@ -48,6 +48,7 @@ int	main()
 */
 
 /*					ft_strlcat					*/
+/*
 int	main()
 {
 	char	src[] = "12345678";
@@ -56,6 +57,7 @@ int	main()
 	printf("%zu\n", ft_strlcat(dest, src, 7));
 	return (0);
 }
+*/
 
 /*					ft_strlcpy					*/
 /*
