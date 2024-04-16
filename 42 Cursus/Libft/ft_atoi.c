@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:21:22 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/12 13:44:21 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/04/15 12:49:40 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,4 @@ int ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*
-   int	main()
-   {
-   printf("%d\n", ft_atoi("  1340ab"));
-   return (0);
-   }
-   */
+

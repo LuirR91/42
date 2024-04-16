@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:17:34 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/12 13:37:13 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/04/15 13:58:07 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,4 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return (s1[i] - s2[i]);
 }
-/*
-int	main()
-{
-	printf("%d\n", ft_strncmp("hey", "hey there", 4));
-	return (0);
-}*/
+
