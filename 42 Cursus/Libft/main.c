@@ -106,28 +106,39 @@ int	main()
 */
 
 /*					ft_memcpy					*/
-
+/*
 int	main()
 {
 	char	src[] = "12345";
 	char	dest[10] = "12345";
 
-	printf("%s\n", dest);
-	memmove(dest + 1, src + 1, 3);
+	ft_memcpy(dest, src, 3);
 	printf("%s\n", dest);
 	return (0);
 }
+*/
 
 /*					ft_memmove					*/
 /*
 int	main()
 {
 	char	src[] = "hello";
-	char	dest[] = "lala";
+	char	dest[10] = "lala";
 
-	printf("%s\n", dest);
-	ft_memmove(dest, src, 3);
+	ft_memmove(dest, src + 1, 3);
 	printf("%s\n", dest);
 	return (0);
 }
 */
+
+/*					ft_memchr					*/
+
+int	main()
+{
+	char	s[] = "abcdefg";
+	char	*res;
+	res = ft_memchr(s, 'b', 5);
+
+	printf("%s\n", res);
+	return (0);
+}
