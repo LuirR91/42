@@ -132,7 +132,7 @@ int	main()
 */
 
 /*					ft_memchr					*/
-
+/*
 int	main()
 {
 	char	s[] = "abcdefg";
@@ -142,3 +142,29 @@ int	main()
 	printf("%s\n", res);
 	return (0);
 }
+*/
+
+/*					ft_memcmp					*/
+/*
+int	main()
+{
+	char	*str1;
+	char	*str2;
+
+	str1 = "abcd";
+	str2 = "abcd";
+	
+	printf("%d\n", ft_memcmp(str1, str2, 6));
+	return (0);
+}*/
+
+/*					ft_strdup					*/
+
+int	main()
+{
+	char *s1 = "123";
+	char *s2 = ft_strdup(s1);
+	
+	printf("%s\n", s2);
+}
+
