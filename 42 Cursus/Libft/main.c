@@ -159,7 +159,7 @@ int	main()
 }*/
 
 /*					ft_strdup					*/
-
+/*
 int	main()
 {
 	char *s1 = "123";
@@ -167,4 +167,43 @@ int	main()
 	
 	printf("%s\n", s2);
 }
+*/
 
+/*					ft_substr					*/
+/*
+int	main()
+{
+	const char	*str;
+
+	str = "12345";
+	printf("%s\n", ft_substr(str, 2, 3));
+	return (0);
+}
+*/
+
+/*					ft_strjoin					*/
+/*
+int	main()
+{
+	char	*s1;
+	char	*s2;
+
+	s1 = "123";
+	s2 = "lala";
+
+	printf("%s\n", ft_strjoin(s1, s2));
+	return (0);
+}
+*/
+
+/*					ft_strtrim					*/
+int	main()
+{
+	char	*s1;
+	char	*set;
+
+	s1 = "12345";
+	set = "2";
+	printf("%s\n", ft_strtrim(s1, set));
+	return (0);
+}
