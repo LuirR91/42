@@ -197,13 +197,61 @@ int	main()
 */
 
 /*					ft_strtrim					*/
+/*
 int	main()
 {
 	char	*s1;
 	char	*set;
 
-	s1 = "12345";
-	set = "2";
+	s1 = "abbbababab123ab45ababababa";
+	set = "ab";
 	printf("%s\n", ft_strtrim(s1, set));
 	return (0);
 }
+*/
+
+/*					ft_split					*/
+/*
+int	main()
+{
+	int	i;
+	char	*str;
+	char	c;
+	char	**big;
+
+	i = 0;
+	str = "hey there how you doing";
+	c = ' ';
+	big = ft_split(str, c);
+	while (big[i])
+	{
+		printf("[%d]: %s\n", i, big[i]);
+		i++;
+	}
+	free(big);
+	return (0);
+}
+*/
+
+/*					ft_itoa					*/
+/*
+int	main()
+{
+	printf("%s\n", ft_itoa(3));
+	printf("%s\n", ft_itoa(-3));
+	printf("%s\n", ft_itoa(33));
+	printf("%s\n", ft_itoa(-33));
+	printf("%s\n", ft_itoa(12345));
+	printf("%s\n", ft_itoa(-12345));
+	printf("%s\n", ft_itoa(98765));
+	printf("%s\n", ft_itoa(-98765));
+	printf("%s\n", ft_itoa(45));
+	printf("%s\n", ft_itoa(-45));
+	printf("%s\n", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(2147483647));
+	printf("%s\n", ft_itoa(0));
+	return (0);
+}
+*/
+
+
