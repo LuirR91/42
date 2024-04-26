@@ -50,5 +50,7 @@ char	*ft_substr(const char* s, unsigned int start, size_t len); /* extract subst
 char	*ft_strtrim(const char *s1, const char *s2); /* trim beginning and end of string with the specified characters */
 char	*ft_strjoin(const char *s1, const char *s2); /* concatenate two strings into a new string (with malloc) */
 char	**ft_split(char const *s, char c); /* split string, with specified character as delimiter, into an array of strings */
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char)); /* applies a function to each character of a string. */
+void    ft_striteri(char *s, void (*f)(unsigned int, char*)); /* applies a function to each character of a string. */
 
 #endif

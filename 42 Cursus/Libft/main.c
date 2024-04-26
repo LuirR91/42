@@ -254,4 +254,43 @@ int	main()
 }
 */
 
+/*					ft_strmapi					*/
+/*
+char	my_func(unsigned int i, char c)
+{
+	printf("My function: index = %d and %c\n", i, c);
+	return ('c' - 1);
+}
 
+int	main()
+{
+	char	*str;
+	char	*newstr;
+
+	str = "Hello";
+	newstr = ft_strmapi(str, my_func);
+
+	printf("%s\n", newstr);
+	free (newstr);
+	return (0);
+}
+*/
+
+/*					ft_striteri					*/
+/*
+void    myfunction(unsigned int i, char *c)
+{
+	printf("My inner function: index = %d and the string is %s\n", i, c);
+	*c = ft_toupper((unsigned char)*c);
+}
+
+int	main()
+{
+	char	str[] = "heyhey";
+	
+	printf("Before striteri str is %s\n", str);
+	ft_striteri(str, myfunction);
+	printf("After striteri str is %s\n", str);
+	return (0);
+}
+*/
