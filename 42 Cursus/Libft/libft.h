@@ -1,9 +1,16 @@
 #ifndef LIBFT_H
 #define LIBFT_H
+
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+typedef struct      s_list
+{
+	void            *content;
+	struct s_list   *next;
+}					t_list;
 
 // Functions from <ctype.h> library
 
@@ -56,5 +63,17 @@ void    ft_putchar_fd(char c, int fd); /* output a char to a file descriptor */
 void	ft_putstr_fd(char *s, int fd); /* output a string to a file descriptor. */
 void	ft_putendl_fd(char *s, int fd); /* output a string to a file descriptor, followed by a new line */
 void    ft_putnbr_fd(int n, int fd); /* output a number to a file descriptor */
+
+// Linked list functions
+
+t_list  *ft_lstnew(void *content); /* creates a new list element */
+void    ft_lstadd_front(t_list **lst, t_list *new); /* adds an element at the beginning of a list */
+int     ft_lstsize(t_list *lst); /* counts the number of elements in a list */
+t_list  *ft_lstlast(t_list *lst); /* returns the last element of the list */
+void    ft_lstadd_back(t_list **lst, t_list *new); /* adds an element at the end of a list */
+void    ft_lstdelone(t_list *lst, void (*del)(void *)); /*  */
+void    ft_lstclear(t_list **lst, void (*del)(void *)); /* deletes and free list */
+void    ft_lstiter(t_list *lst, void (*f)(void *)); /* applies a function to each element of a list */
+t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *)); /* applies a function to each element of a list */
 
 #endif
