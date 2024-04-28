@@ -52,5 +52,9 @@ char	*ft_strjoin(const char *s1, const char *s2); /* concatenate two strings int
 char	**ft_split(char const *s, char c); /* split string, with specified character as delimiter, into an array of strings */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char)); /* applies a function to each character of a string. */
 void    ft_striteri(char *s, void (*f)(unsigned int, char*)); /* applies a function to each character of a string. */
+void    ft_putchar_fd(char c, int fd); /* output a char to a file descriptor */
+void	ft_putstr_fd(char *s, int fd); /* output a string to a file descriptor. */
+void	ft_putendl_fd(char *s, int fd); /* output a string to a file descriptor, followed by a new line */
+void    ft_putnbr_fd(int n, int fd); /* output a number to a file descriptor */
 
 #endif
