@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:08:26 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/12 11:09:38 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:35:05 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,11 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+/*
+int	main()
+{
+	ft_toupper('a');
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 11:02:27 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:48:51 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:06:07 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,14 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	news[j] = 0;
 	return (news);
 }
+
+/*
+int	main()
+{
+	const char	*str;
+
+	str = "12345";
+	printf("%s\n", ft_substr(str, 2, 3));
+	return (0);
+}
+*/

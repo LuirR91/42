@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiscjribeiro@gmail.com>         +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 10:42:51 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 14:41:30 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:35:35 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,11 @@ int	ft_isdigit(int d)
 		return (1);
 	return (0);
 }
+
+ /*
+int	main()
+{
+	ft_isdigit('a');
+	return (0);
+}
+*/

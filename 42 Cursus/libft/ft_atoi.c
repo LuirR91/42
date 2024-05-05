@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 14:40:03 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:42:48 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 18:22:40 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,11 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+/*
+int	main()
+{
+	printf("%d\n", ft_atoi("  1340ab"));
+	return (0);
+}
+*/

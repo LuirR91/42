@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 10:50:18 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/17 14:30:16 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 21:24:48 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*
+int	main()
+{
+	char	src[] = "hello";
+	char	dest[10] = "lala";
+
+	ft_memmove(dest, src + 1, 3);
+	printf("%s\n", dest);
+	return (0);
+}
+*/

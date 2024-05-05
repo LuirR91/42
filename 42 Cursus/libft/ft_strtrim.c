@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 12:37:31 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:50:41 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:06:33 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,16 @@ char	*ft_strtrim(const char *s1, const char *set)
 		return (NULL);
 	return (str);
 }
+
+/*
+int	main()
+{
+	char	*s1;
+	char	*set;
+
+	s1 = "abbbababab123ab45ababababa";
+	set = "ab";
+	printf("%s\n", ft_strtrim(s1, set));
+	return (0);
+}
+*/

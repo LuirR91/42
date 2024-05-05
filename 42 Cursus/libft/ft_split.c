@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 10:50:41 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/23 13:43:47 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:06:50 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,3 +62,25 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
+
+/*
+int	main()
+{
+	int	i;
+	char	*str;
+	char	c;
+	char	**big;
+
+	i = 0;
+	str = "hey there how you doing";
+	c = ' ';
+	big = ft_split(str, c);
+	while (big[i])
+	{
+		printf("[%d]: %s\n", i, big[i]);
+		i++;
+	}
+	free(big);
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 10:28:32 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:36:25 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:04:40 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,17 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		return (-1);
 	return (0);
 }
+
+/*
+int	main()
+{
+	char	*str1;
+	char	*str2;
+
+	str1 = "abcd";
+	str2 = "abcd";
+	
+	printf("%d\n", ft_memcmp(str1, str2, 6));
+	return (0);
+}
+*/

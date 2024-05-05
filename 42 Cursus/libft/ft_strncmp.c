@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:17:34 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/15 13:58:07 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:40:37 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (s1[i] - s2[i]);
 }
 
+/*
+int	main()
+{
+	printf("%d\n", ft_strncmp("hey", "hey there", 4));
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:39:04 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:39:59 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:05:30 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,13 @@ char	*ft_strdup(const char *src)
 		return (NULL);
 	return (ft_strcpy(clone, (char *)src));
 }
+
+/*
+int	main()
+{
+	char *s1 = "123";
+	char *s2 = ft_strdup(s1);
+	
+	printf("%s\n", s2);
+}
+*/

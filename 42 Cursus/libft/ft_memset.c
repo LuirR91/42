@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 14:00:19 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:33:01 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:41:32 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,14 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
+
+/*
+int	main()
+{
+	char str [] = "abc";
+
+	ft_memset(str, "o", 3);
+	printf("%s\n", str);
+	return (0);
+}
+*/

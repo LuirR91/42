@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 14:55:54 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/15 14:59:47 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:38:41 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,11 @@ char *ft_strrchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (0);
 }
+
+/*
+int	main()
+{
+	printf("%s\n", ft_strrchr("carrot", 'o'));
+	return (0);
+}
+*/

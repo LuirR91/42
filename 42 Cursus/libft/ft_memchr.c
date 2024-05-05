@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:33:23 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:37:01 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 21:25:09 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+/*
+int	main()
+{
+	char	s[] = "abcdefg";
+	char	*res;
+	res = ft_memchr(s, 'b', 5);
+
+	printf("%s\n", res);
+	return (0);
+}
+*/

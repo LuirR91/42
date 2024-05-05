@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiscjribeiro@gmail.com>         +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 14:40:18 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 14:40:21 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:42:40 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,15 @@ void    ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+/*
+int	main()
+{
+	char	str[] = "zeros";
+	
+	printf("%s\n", str);
+	ft_bzero(str, 5);
+	printf("%s\n", str);
+	return (0);
+}
+*/

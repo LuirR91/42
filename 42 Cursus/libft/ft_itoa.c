@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 13:51:45 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:54:45 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:07:14 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,3 +69,23 @@ char	*ft_itoa(int n)
 	result[len] = 0;
 	return (result);
 }
+
+/*
+int	main()
+{
+	printf("%s\n", ft_itoa(3));
+	printf("%s\n", ft_itoa(-3));
+	printf("%s\n", ft_itoa(33));
+	printf("%s\n", ft_itoa(-33));
+	printf("%s\n", ft_itoa(12345));
+	printf("%s\n", ft_itoa(-12345));
+	printf("%s\n", ft_itoa(98765));
+	printf("%s\n", ft_itoa(-98765));
+	printf("%s\n", ft_itoa(45));
+	printf("%s\n", ft_itoa(-45));
+	printf("%s\n", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(2147483647));
+	printf("%s\n", ft_itoa(0));
+	return (0);
+}
+*/

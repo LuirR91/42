@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 14:35:28 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/02 17:48:07 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:07:32 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,24 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
+
+/*
+char	my_func(unsigned int i, char c)
+{
+	printf("My function: index = %d and %c\n", i, c);
+	return ('c' - 1);
+}
+
+int	main()
+{
+	char	*str;
+	char	*newstr;
+
+	str = "Hello";
+	newstr = ft_strmapi(str, my_func);
+
+	printf("%s\n", newstr);
+	free (newstr);
+	return (0);
+}
+*/

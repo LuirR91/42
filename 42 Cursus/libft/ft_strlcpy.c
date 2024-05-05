@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lyrikk <lyrikk@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:21:16 by luiribei          #+#    #+#             */
-/*   Updated: 2024/04/15 13:57:42 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:40:15 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,13 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	dest[i] = '\0';
 	return (j);
 }
+
+/*
+int	main(void)
+{
+	char	s[] = "World!";
+	char	d[] = "Hello ";
+	printf("%d | %s\n", ft_strlcpy(d, s, 4), d);
+	return (0);
+}
+*/
