@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:23:50 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/06 12:52:46 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/10 15:20:10 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *str, const char *little, size_t len);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-size_t	ft_strlcpy(char *dest, char *src, size_t size);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *str);
 
