@@ -6,7 +6,7 @@
 /*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:23:50 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/10 15:20:10 by lyrikk           ###   ########.fr       */
+/*   Updated: 2024/05/14 15:48:52 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <string.h>
 # include <stdlib.h>
+# include <limits.h>
 
 // Functions from <ctype.h> library
 

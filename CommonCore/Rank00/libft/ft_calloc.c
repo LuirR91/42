@@ -6,21 +6,23 @@
 /*   By: lyrikk <luiscjribeiro>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 14:40:31 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/13 11:22:43 by lyrikk           ###   ########.fr       */
+/*   Updated: 2024/05/14 16:00:57 by lyrikk           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t n, size_t size)
+void	*ft_calloc(size_t nbr_elements, size_t element_size)
 {
 	void	*p;
+	size_t	size;
 
-	if (n && size > SIZE_MAX / n)
-        return (NULL);
-	p = malloc(n * size);
-	if (p == NULL)
+	size = nbr_elements * element_size;
+	if (size && element_size && size > (UINT_MAX / element_size))
 		return (NULL);
-	ft_bzero(p, n * size);
+	p = (void *)malloc(size);
+	if (!p)
+		return (NULL);
+	ft_bzero(p, size);
 	return (p);
 }
