@@ -6,7 +6,7 @@
 #    By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/14 19:04:23 by lyrikk            #+#    #+#              #
-#    Updated: 2024/05/16 19:34:01 by luiribei         ###   ########.fr        #
+#    Updated: 2024/05/21 11:55:54 by luiribei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRC_B	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 		ft_lstclear.c ft_lstiter.c ft_lstmap.c\
 
 CC	=	@cc
-CFLAGS	=	-Wall -Werror -Wextra
+CFLAGS	=	-Wall -Wextra -Werror
 OBJS	=	${SRCS:.c=.o}
 OBJS_B	=	${SRC_B:.c=.o}
 RM	=	@rm -f
