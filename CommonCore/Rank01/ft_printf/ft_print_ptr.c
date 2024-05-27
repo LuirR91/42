@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 11:01:40 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/27 14:09:01 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/27 14:14:20 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_print_ptr(unsigned long long ptr)
 	i = 0;
 	i += write(1, "0x", 2);
 	if (ptr == 0)
-		i += write(1, "", 1);
+		i += write(1, "0", 1);
 	else
 	{
 		ft_put_ptr(ptr);
