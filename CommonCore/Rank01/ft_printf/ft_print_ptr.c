@@ -1,31 +1,58 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_str.c                                     :+:      :+:    :+:   */
+/*   ft_print_ptr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 12:45:25 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/27 14:04:19 by luiribei         ###   ########.fr       */
+/*   Created: 2024/05/24 11:01:40 by luiribei          #+#    #+#             */
+/*   Updated: 2024/05/27 14:09:01 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_str(const char *str)
+int	ft_ptr_len(uintptr_t num)
 {
 	int	i;
 
 	i = 0;
-	if (!str)
+	while (num)
 	{
-		write(1, "(null)", 6);
-		return (6);
-	}
-	while (str[i])
-	{
-		write (1, &str[i], 1);
 		i++;
+		num = num / 16;
+	}
+	return (i);
+}
+
+void	ft_put_ptr(uintptr_t num)
+{
+	if (num >= 16)
+	{
+		ft_put_ptr(num / 16);
+		ft_put_ptr(num % 16);
+	}
+	else
+	{
+		if (num <= 9)
+			ft_print_char(num + '0');
+		else
+			ft_print_char(num - 10 + 'a');
+	}
+}
+
+int	ft_print_ptr(unsigned long long ptr)
+{
+	int	i;
+
+	i = 0;
+	i += write(1, "0x", 2);
+	if (ptr == 0)
+		i += write(1, "", 1);
+	else
+	{
+		ft_put_ptr(ptr);
+		i += ft_ptr_len(ptr);
 	}
 	return (i);
 }

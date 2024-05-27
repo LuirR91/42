@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:45:02 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/21 14:52:04 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/27 13:57:47 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 int	ft_print_char(int c)
 {
+	//printf("\n %c \n", c);
 	return (write(1, &c, 1));
 }
