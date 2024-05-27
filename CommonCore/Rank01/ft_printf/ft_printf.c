@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 11:59:11 by luiribei          #+#    #+#             */
-/*   Updated: 2024/05/27 14:03:23 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/05/27 15:32:34 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,9 @@ int	ft_format(char specifier, va_list *ap)
 	else if (specifier == 'X')
 		i += ft_print_upper_digits((long)(va_arg(*ap, unsigned int)), 16);
 	else
-		i += write (1, &specifier, 1);
+		i += write (1, "%", 1);
 	return (i);
 }
-
-#include "ft_printf.h"
 
 int	ft_printf(const char *format, ...)
 {
@@ -47,11 +45,13 @@ int	ft_printf(const char *format, ...)
 	if (!format)
 		return (-1);
 	va_start(ap, format);
-	while (*format != '\0')
+	while (*format)
 	{
 		if (*format == '%')
-		{
+		{	
 			format++;
+			if (!*format)
+				return (len);
 			len += ft_format(*format, &ap);
 		}
 		else
@@ -101,4 +101,3 @@ int	ft_printf(const char *format, ...)
 	printf("%d chars\n",  i);
 	 i = printf("Hex-> %x\n", -1);
 	printf("%d chars\n",  i); */
-
