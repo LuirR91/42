@@ -6,67 +6,41 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:29:32 by luiribei          #+#    #+#             */
-/*   Updated: 2024/06/14 20:03:06 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/06/18 16:53:10 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	*ft_clean(char *current_line, char *read_content)
-{
-	int	pos;
-	int	i;
-
-	pos = ft_is_new_line(current_line);
-	if (pos != -1)
-		current_line[pos + 1] = '\0';
-	i = 0;
-	pos = ft_is_new_line(read_content);
-	if (pos != -1)
-	{
-		pos++;
-		while (read_content[pos + 1])
-		{
-			read_content[i] = read_content[pos + 1];
-			i++;
-		}
-	}
-	while (read_content[i])
-	{
-		read_content[i] = '\0';
-		i++;
-	}
-	return (current_line);
-}
-
-char	*get_next_line(int	fd)
+char	*get_next_line(int fd)
 {
 	static char	read_content[BUFFER_SIZE + 1];
-	char	*current_line;
-	int		read_bytes;
+	char		*current_line;
+	int			read_bytes;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > OPEN_MAX)
 		return (NULL);
 	current_line = NULL;
-	while (ft_is_new_line(current_line) == -1)
+	while (ft_is_newline(current_line) == -1)
 	{
 		if (read_content[0] == '\0')
 		{
 			read_bytes = read(fd, read_content, BUFFER_SIZE);
-			if (read_bytes == 0)
-				return (current_line);
-			else if (read_bytes < 0)
+			if (read_bytes <= 0)
 			{
-				if (current_line)
-					free(current_line);
+				if (read_bytes == 0)
+					return (current_line);
+				free(current_line);
 				return (NULL);
 			}
+			read_content[read_bytes] = '\0';
 		}
 		current_line = ft_strjoin(current_line, read_content);
 		ft_clean (current_line, read_content);
 	}
 	return (current_line);
 }
+
 /* int	main ()
 {
 	int	fd;
@@ -91,4 +65,4 @@ char	*get_next_line(int	fd)
 	// Close the file descriptor
 	close(fd);
 	return (EXIT_SUCCESS);
-}*/
+} */
