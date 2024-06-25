@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 16:58:40 by luiribei          #+#    #+#             */
-/*   Updated: 2024/06/18 17:09:55 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/06/20 13:58:33 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,15 @@ char	*get_next_line(int fd)
 	return (current_line);
 }
 
-/* int main()
+int main()
 {
 	int	fd[3];
 	char *line[3];
 	int	line_count[3];
 	
-	fd[0] = open("file1.txt", O_RDONLY | O_CREAT);
-	fd[1] = open("file2.txt", O_RDONLY | O_CREAT);
-	fd[2] = open("file3.txt", O_RDONLY | O_CREAT);
+	fd[0] = open("file1.txt", O_RDONLY);
+	fd[1] = open("file2.txt", O_RDONLY);
+	fd[2] = open("file3.txt", O_RDONLY);
 	if (fd[0] < 0 || fd[1] < 0 || fd[2] < 0)
 	{
     perror("Error opening file");
@@ -58,23 +58,21 @@ char	*get_next_line(int fd)
 	line_count[0] = 0;
 	line_count[1] = 0;
 	line_count[2] = 0;
-    if((line[0] = get_next_line(fd[0])) != NULL && 
-	(line[1] = get_next_line(fd[1])) != NULL 
-	&& (line[2] = get_next_line(fd[2])) != NULL) 
+    while ((line[0] = get_next_line(fd[0]))
+	&& (line[1] = get_next_line(fd[1]))
+	&& (line[2] = get_next_line(fd[2])))
 	{
         // Output the line with a counter 
-		printf("Line1 %d: %s\n", ++line_count[0], line[0]);
-		printf("Line2 %d: %s\n", ++line_count[1], line[1]);
-		printf("Line3 %d: %s\n", ++line_count[2], line[2]);
+		printf("file1 %d: %s\n", ++line_count[0], line[0]);
+		printf("file2 %d: %s\n", ++line_count[1], line[1]);
+		printf("file3 %d: %s\n\n", ++line_count[2], line[2]);
 		free(line[0]); // Free the line once used
 		free(line[1]);
 		free(line[2]);
-		
 	}
-	
     // Close the file descriptor
     close(fd[0]);
 	close(fd[1]);
 	close(fd[2]);
 	return (EXIT_SUCCESS);
-} */
+}

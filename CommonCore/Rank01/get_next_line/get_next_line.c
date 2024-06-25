@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 18:29:32 by luiribei          #+#    #+#             */
-/*   Updated: 2024/06/18 17:15:21 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/06/21 13:52:24 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,28 +41,25 @@ char	*get_next_line(int fd)
 	return (current_line);
 }
 
-/* int	main ()
+int	main ()
 {
 	int	fd;
 	char *line;
 	int	line_count = 0;
 
-	fd = open("file.txt", O_RDONLY | O_CREAT);
+	fd = open("file1.txt", O_RDONLY);
 	if (fd < 0)
 	{
 		perror("Error opening file");
 		return (EXIT_FAILURE);
 	}
 
-	// Read lines until NULL is returned (end of file or error)
 	while ((line = get_next_line(fd)) != NULL)
 	{
-		// Output the line with a counter
 		printf("Line %d; %s\n", ++line_count, line);
-		free(line); // Free the line once is used
+		free(line);
 	}
 
-	// Close the file descriptor
 	close(fd);
 	return (EXIT_SUCCESS);
-} */
+} 

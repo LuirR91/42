@@ -6,7 +6,7 @@
 /*   By: luiribei <luiribei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 14:56:22 by luiribei          #+#    #+#             */
-/*   Updated: 2024/06/18 16:50:52 by luiribei         ###   ########.fr       */
+/*   Updated: 2024/06/25 11:52:20 by luiribei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		return (NULL);
 	i = -1;
 	j = -1;
-	while (i++ < (len_s1 -1))
+	while (i++ < (len_s1 - 1))
 		s_final[i] = s1[i];
 	while (j++ < (len_s2 - 1))
 	{
